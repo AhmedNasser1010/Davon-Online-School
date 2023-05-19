@@ -1,0 +1,179 @@
+/* contact */
+.contact {
+	color: white;
+	display: flex;
+}
+
+.contact .left {
+	background-color: #191919;
+	width: 50%;
+	padding: 100px 130;
+}
+
+.contact .left .sectionTitle {
+	font-size: 56px;
+	line-height: 67px;
+	font-weight: unset;
+	padding: 100px 130px 50px;
+}
+
+.contact .left .line {
+	width: 20%;
+	height: 1px;
+	background-color: #555555;
+	display: block;
+	margin: 0 130px 30px;
+}
+
+.contact .left .sectionDis {
+	font-size: 25px;
+	line-height: 38px;
+	padding: 0 130px 40px;
+}
+
+.contact .left form {
+	font-family: 'Avenir';
+	padding: 0 130px;
+}
+
+.contact .left form .name {
+	display: flex;
+	padding-bottom: 30px;
+}
+
+.contact .left form .name .fName {
+	display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact .left form .name .fName label {
+	padding-bottom: 15px;
+	display: block;
+}
+
+.contact .left form .name .fName input {
+	border: 1px solid white;
+	padding: 10px 60px 10px 20px;
+}
+
+.contact .left form .name .lName {
+	display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact .left form .name .lName label {
+	padding-bottom: 15px;
+	display: block;
+}
+
+.contact .left form .name .lName input {
+	border: 1px solid white;
+	border-left-color: transparent;
+	padding: 10px 60px 10px 20px;
+}
+
+.contact .left form .contact {
+	display: flex;
+	padding-bottom: 30px;
+}
+
+.contact .left form .contact .email {
+	display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact .left form .contact .email label {
+	padding-bottom: 15px;
+	display: block;
+}
+
+.contact .left form .contact .email input {
+	border: 1px solid white;
+	padding: 10px 60px 10px 20px;
+}
+
+.contact .left form .contact .phone {
+	display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact .left form .contact .phone label {
+	padding-bottom: 15px;
+	display: block;
+}
+
+.contact .left form .contact .phone input {
+	border: 1px solid white;
+	border-left-color: transparent;
+	padding: 10px 60px 10px 20px;
+}
+
+.contact .left form .message {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 40px;
+}
+
+.contact .left form .message label {
+	padding-bottom: 15px;
+	display: block;
+}
+
+.contact .left form .message textarea {
+	height: 100px;
+	border: 1px solid white;
+	padding: 10px 20px;
+	background-color: transparent;
+	color: white;
+}
+
+.contact .left form input.purpleBigBtn {
+	margin-bottom: 100px;
+}
+
+.contact .left .chatTheTeam {
+	background-color: black;
+	padding: 50px 130px;
+}
+
+.contact .left .chatTheTeam h3 {
+	font-size: 25px;
+	line-height: 38px;
+	font-weight: unset;
+	padding-bottom: 20px;
+}
+
+.contact .left .chatTheTeam p {
+	font-family: 'Avenir';
+	line-height: 29px;
+	padding-bottom: 30px;
+}
+
+.contact .left .chatTheTeam a.purpleBigBtn {
+	background-color: white;
+	color: var(--purple);
+	border-color: white;
+}
+
+.contact .left .chatTheTeam a.purpleBigBtn:hover {
+	background-color: black;
+	color: white;
+}
+
+.contact .right {
+	width: 50%;
+	position: relative;
+	overflow: hidden;
+}
+
+.contact .right .contactBg {
+	background-image: url("https://static.wixstatic.com/media/c837a6_0564cc8d4e9f42cd8e318c80b1617eaf~mv2.jpg");
+}
+/* ^contact^ */
+
+/* questions */
+/* ^questions^ */

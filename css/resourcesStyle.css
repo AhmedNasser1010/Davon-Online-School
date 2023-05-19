@@ -1,0 +1,141 @@
+/* resources */
+.resources {
+	background-color: white;
+}
+
+.resources .topbar {
+	padding: 30px 70px 80px;
+}
+
+.resources .topbar .allPosts {
+	margin-right: 40px;
+}
+
+.resources .topbar .allPosts,
+.resources .topbar .featuredPost {
+	transition: var(--transition-normal);
+	color: black;
+}
+
+.resources .topbar .allPosts:hover,
+.resources .topbar .featuredPost:hover {
+	color: var(--purple);
+}
+
+.resources .postsBox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 70px;
+	padding-top: 0;
+	gap: 32px;
+}
+
+.resources .postsBox .post {
+	width: calc(100% / 2 - 32px);
+}
+
+.resources .postsBox .post .topPost a img {
+	width: 100%;
+  display: block;
+}
+
+.resources .postsBox .post .middlePost {
+	padding: 30px 24px 0px;
+	border: 1px solid #cacaca;
+	border-block-color: transparent;
+	position: relative;
+}
+
+.resources .postsBox .post .middlePost i {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: black;
+	transition: var(--transition-normal);
+	padding: 10px;
+}
+
+.resources .postsBox .post .middlePost i:hover {
+	color: var(--purple);
+}
+
+.resources .postsBox .post .middlePost .ago {
+	font-family: 'Avenir';
+	font-size: 12px;
+}
+
+.resources .postsBox .post .middlePost .postTitle {
+	font-size: 25px;
+	line-height: 35px;
+	font-weight: unset;
+	padding: 23px 0px 11px;
+}
+
+.resources .postsBox .post .middlePost .blogPost {
+	font-family: 'Avenir';
+	line-height: 24px;
+	padding-bottom: 23px;
+}
+
+.resources .postsBox .post .middlePost .postTitle,
+.resources .postsBox .post .middlePost .blogPost {
+	color: black;
+	transition: var(--transition-fast);
+}
+
+.resources .postsBox .post .middlePost .postTitle:hover,
+.resources .postsBox .post .middlePost .blogPost:hover {
+	color: var(--purple);
+}
+
+.resources .postsBox .post .footerPost {
+	padding: 0px 24px 30px;
+	border: 1px solid #cacaca;
+	border-top-color: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.resources .postsBox .post .footerPost  div:first-of-type {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}	
+
+.resources .postsBox .post .footerPost .counter,
+.resources .postsBox .post .footerPost .counter {
+	font-family: 'Avenir';
+	font-size: 12px;
+	padding: 0 5px;
+}
+
+.resources .postsBox .post .footerPost .views {
+	padding-right: 16px;
+	display: flex;
+	align-items: center;
+}
+
+.resources .postsBox .post .footerPost .comments {
+	display: flex;
+	align-items: center;
+	color: black;
+}
+
+.resources .postsBox .post .footerPost .likes {
+	display: flex;
+	align-items: center;
+	color: black;
+}
+
+.resources .postsBox .post .footerPost .comments,
+.resources .postsBox .post .footerPost .likes {
+	transition: var(--transition-fast);
+}
+
+.resources .postsBox .post .footerPost .comments:hover,
+.resources .postsBox .post .footerPost .likes:hover {
+	color: var(--purple);
+}
+/* ^resources^ */

@@ -1,0 +1,336 @@
+/* Fonts */
+@font-face {
+  font-family: 'Questrial';
+  src: url(../assets/fonts/Questrial-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Avenir';
+  src: url(../assets/fonts/Avenir-LT-35-Light.ttf);
+}
+/* ^Fonts^ */
+
+/* default rules */
+:root {
+	--purple: #7E55F6;
+	--light-purple: #dacdff;
+	--input-red: #8E2627;
+	--p-gray: gray;
+	--transition-fast: 0.3s;
+	--transition-normal: 0.5s;
+	--transition-slow: 1s;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Questrial';
+	background-color: black;
+}
+
+input {
+	all: unset;
+}
+
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+}
+/* ^default rules^ */
+
+/* reusable class */
+.purpleReversBigBtn,
+.purpleBigBtn,
+.purpleReversSmallBtn,
+.purpleSmallBtn {
+	color: white;
+	background-color: var(--purple);
+	border: 1px solid;
+	border-color: var(--purple);
+	padding: 18px 55px;
+	transition: var(--transition-normal);
+	font-family: 'Avenir';
+	display: inline-block;
+	line-height: 22px;
+}
+
+.purpleReversSmallBtn,
+.purpleSmallBtn {
+	padding: 11px 43px;
+}
+
+.purpleReversBigBtn:hover,
+.purpleBigBtn:hover,
+.purpleReversSmallBtn:hover,
+.purpleSmallBtn:hover {
+	background-color: transparent;
+	border-color: white;
+}
+
+.purpleReversSmallBtn,
+.purpleReversBigBtn {
+	background-color: transparent;
+	border-color: white;
+}
+.purpleReversSmallBtn:hover,
+.purpleReversBigBtn:hover {
+	background-color: var(--purple);
+	border-color: var(--purple);
+}
+
+.purpleLinkBtn {
+	transition: var(--transition-normal);
+	color: white;
+}
+.purpleLinkBtn:hover {
+	color: var(--light-purple) !important;
+}
+
+.verticalLine::before {
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	top: 0;
+	left: 50%;
+	background-color: #eee;
+}
+.horizontalLine::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	left: 0;
+	top: 50%;
+	background-color: #eee;
+}
+
+.verticalLine-50,
+.horizontalLine-50 {
+	display: block;
+	width: 50%;
+	height: 1px;
+	background-color: #eee;
+}
+
+.verticalLine-50 {
+	width: 1px;
+	height: 50%;
+}
+
+.paragraphTopLine {
+	width: 50%;
+	height: 1px;
+	background-color: white;
+	display: inline-block;
+}
+
+.scrollEffectImgVer,
+.scrollEffectImgHor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.scrollEffectImgVer {
+/*	transform: scale(1.1);*/
+}
+/* ^reusable class^ */
+
+/* header */
+.header {
+	padding: 20px 68px;
+}
+
+.header .top {
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .top .icon {
+	display: flex;
+  width: fit-content;
+  flex-direction: column;
+  color: white;
+  transform: translateY(10px);
+}
+.header .top .icon h1 {
+	font-size: 34px !important;
+	margin: 0 !important;
+	font-weight: unset;
+	position: relative;
+	padding-bottom: 6px;
+}
+
+.header .top .icon h1::before {
+	content: "";
+  position: absolute;
+  bottom: 15px;
+  right: 40px;
+  width: 6px;
+  height: 6px;
+  background-color: var(--purple);
+}
+
+.header .top .icon span {
+	font-size: 12px;
+	font-family: 'Avenir';
+}
+
+.header .top .btnContainer .logInBtn {
+	color: white;
+	font-family: 'Avenir';
+}
+.header .top .btnContainer .enrollNowBtn {
+	margin-left: 25px;
+}
+
+.header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 17px;
+}
+
+.header nav a {
+	transition: var(--transition-normal);
+	color: white;
+	padding-left: 46px;
+	font-family: 'Avenir';
+}
+
+.header nav a:hover {
+	color: var(--light-purple) !important;
+}
+
+.header nav a.selected {
+	color: var(--light-purple);
+}
+/* ^header^ */
+
+/* footer */
+.footer {
+	position: relative;
+	display: flex;
+	color: white;
+	padding: 50px 140px 100px;
+	margin-top: 50px;
+}
+
+.footer.verticalLine::before {
+	background-color: #535353;
+}
+
+.footer .leftSide {
+	width: 50%;
+}
+
+.footer .leftSide .icon {
+	padding-bottom: 132px;
+	display: inline-block;
+}
+
+.footer .leftSide .icon h2 {
+	color: white;
+	font-weight: unset;
+	font-size: 34px;
+	line-height: 41px	;
+	position: relative;
+	margin: 0;
+}
+
+.footer .leftSide .icon h2::before {
+	content: "";
+  position: absolute;
+  right: 39px;
+  bottom: 11px;
+  width: 6px;
+  height: 6px;
+  background-color: var(--purple);
+}
+
+.footer .leftSide .icon span {
+	color: white;
+	font-size: 12px;
+  font-family: 'Avenir';
+}
+
+.footer .leftSide h3 {
+	font-size: 56px;
+	line-height: 67px;
+	padding-bottom: 33px;	
+	font-weight: unset;
+}
+
+.footer .rightSide {
+	width: 50%;
+	padding-left: 175px;
+}
+
+.footer .rightSide .follow .data {
+	text-decoration: underline;
+}
+
+.footer .rightSide .info,
+.footer .rightSide .address,
+.footer .rightSide .follow {
+	padding-bottom: 50px;
+}
+
+.footer .rightSide div h3 {
+	font-size: 25px;
+	line-height: 38px;
+	font-weight: unset;
+}
+
+.footer .rightSide .data {
+	line-height: 29px;
+	font-family: 'Avenir';
+	color: white;
+	display: block;
+}
+
+.footer .arrow {
+	position: absolute;
+	bottom: 100px;
+	right: 100px;
+	width: 50px;
+  transform: rotate(180deg);
+}
+/* ^footer^ */
+
+/* page title */
+.pageTitle {
+	background-color: #191919;
+	padding: 70px;
+	text-align: center;
+	color: white;
+}
+
+.pageTitle h2.title {
+	font-size: 56px;
+	line-height: 67px;
+	font-weight: unset;
+	padding-bottom: 17px;
+}
+
+.pageTitle p.discription {
+	font-size: 25px;
+	line-height: 38px;
+}
+/* ^page title^ */

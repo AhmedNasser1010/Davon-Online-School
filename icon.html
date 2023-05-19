@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<span class="icon">D</span>
+	<style>
+		body {
+			background-color: #7e55f6;
+		}
+
+		.icon {
+			font-size: 100px;
+   			color: #ffffff;
+    		font-family: monospace;
+    		width: 120px;
+    		height: 120px;
+    		display: block;
+    		text-align: center;
+    		position: relative;
+    		background-color: #7e55f6;
+    		border-radius: 50%;
+		}
+
+		.icon::before {
+			content: "";
+    		position: absolute;
+    		bottom: 28px;
+    		right: 16px;
+    		background-color: #ffffff;
+    		width: 15px;
+    		height: 15px;
+		}
+	</style>
+</body>
+</html>

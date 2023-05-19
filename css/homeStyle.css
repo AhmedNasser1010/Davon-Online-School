@@ -1,0 +1,454 @@
+/* introdaction */
+.introdaction {
+	background-color: transparent;
+}
+.introdactionBg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -2;
+	width: 100%;
+	filter: brightness(0.3);
+}
+
+.introdactionBg::before {
+	content: "";
+	background-color: #0000009e;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.introdaction .introText {
+	margin: 116px 116px 209px;
+	color: white;
+}
+
+.introdaction .introText h2 {
+	line-height: 96px;
+	font-size: 80px;
+	font-weight: 400;
+}
+
+.introdaction .introText p {
+	font-size: 25px;
+  padding-left: 6px;
+  margin: 30px 0px 46px;
+}
+
+.introdaction .introText .enrollNowBtn {
+	margin-left: 8px;
+}
+
+.introdaction .introFooter {
+	display: flex;
+  	align-items: center;
+  	justify-content: space-between;
+  	position: relative;
+  	padding: 10px 0px 150px;
+  	background-color: transparent;
+}
+
+.introdaction .introFooter img {
+	width: 60px;
+	margin-left: 100px;
+}
+
+.introdaction .introFooter .right {
+	width: 50%;
+}
+
+.introdaction .introFooter .right form {
+	margin-left: auto;
+	margin-right: auto;
+	width: fit-content;
+	color: white;
+}
+
+.introdaction .introFooter .right form span {
+	font-family: 'Avenir';
+}
+
+.introdaction .introFooter .right form .inputTitle {
+	font-size: 22px;
+	margin-bottom: 27px;
+}
+
+.introdaction .introFooter .right form .inputContainer {
+	margin-top: 14px;
+}
+
+.introdaction .introFooter .right form .inputContainer .inputEmail {
+	color: white;
+	padding: 18px 50px 18px 18px;
+	border: 1px solid;
+	border-color: var(--purple);
+	font-family: 'Avenir';
+}
+
+.introdaction .introFooter .right form .inputContainer .inputEmail::placeholder {
+	color: white;
+}
+
+.introdaction .introFooter .right form .inputContainer .submit {
+	color: white;
+	cursor: pointer;
+	border: 1px solid;
+	border-color: var(--purple);
+	padding: 18px 83px;
+	margin-left: -5px;
+	border-left-color: transparent;
+	background-color: var(--purple);
+	transition: var(--transition-normal);
+	font-family: 'Avenir';
+}
+
+.introdaction .introFooter .right form .inputContainer .submit:hover {
+	background-color: white;
+	color: var(--purple);
+}
+/* ^introdaction^ */
+
+/* why enroll */
+.whyEnroll {
+	background-color: white;
+	display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.whyEnroll .box.one {}
+
+.whyEnroll .box.one .sectionTitle {
+	font-size: 56px;
+	line-height: 67px;
+	font-weight: unset;
+}
+
+.whyEnroll .box {
+	width: 50%;
+	padding: 113px 145px;
+}
+
+.whyEnroll .box.card {}
+
+.whyEnroll .box.card img {
+	width: 64px;
+	margin-bottom: 32px;
+}
+
+.whyEnroll .box.card .cardTitle {
+	font-size: 25px;
+	margin-bottom: 20px;
+	font-weight: unset;
+}
+
+.whyEnroll .box.card .cardDis {
+	font-size: 16px;
+	line-height: 30px;
+	color: var(--p-gray);
+	font-family: 'Avenir';
+}
+/* ^why enroll^ */
+
+/* about davon */
+.aboutDavon {
+	position: relative;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	padding: 150px 140px;
+}
+
+.aboutDavon span {
+	background-image: url("https://static.wixstatic.com/media/c837a6_44e3014997b64b829ef10d8761ce79ee~mv2.jpg");
+	position: absolute;
+	top: 0;
+	left: 0;
+	filter: brightness(0.3);
+	z-index: -1;
+	transform: scale(1.0) !important;
+}
+
+.aboutDavon .top {
+	margin-bottom: 111px;
+}
+
+.aboutDavon .top .sectionTitle {
+	font-size: 56px;
+	line-height: 67px;
+	font-weight: unset;
+	margin-bottom: 25px;
+}
+
+.aboutDavon .top .sectionDis {
+	font-size: 25px;
+	line-height: 38px;
+}
+
+.aboutDavon .down {
+	width: 50%;
+	align-self: flex-end;
+	padding-left: 200px;
+}
+
+.aboutDavon .down .topDis {
+	padding: 38px 0px 50px;
+}
+
+.aboutDavon .down .downDis {
+	padding-bottom: 40px;
+}
+
+.aboutDavon .down .topDis,
+.aboutDavon .down .downDis {
+	font-family: 'Avenir';
+	padding-right: 40px;
+	font-size: 16px;
+}
+/* ^about davon^ */
+
+/* our academics */
+.ourAcademics {
+	position: relative;
+}
+
+.ourAcademics span {
+	filter: brightness(0.2);
+	position: absolute;
+	z-index: -1;
+	background-image: url("https://static.wixstatic.com/media/c837a6_0ff8e923927c4f789f092e23597f2220~mv2.jpg");
+	width: 100%;
+	transform: scale(1.0) !important;
+	background-size: cover;
+}
+
+.ourAcademics h2 {
+	font-size: 56px;
+	line-height: 67px;
+	text-align: center;
+	color: white;
+	padding-top: 180px;
+	margin-bottom: 32px;
+}
+
+.ourAcademics p {
+	line-height: 29px;
+  text-align: center;
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  margin-bottom: 128px;
+}
+
+.ourAcademics .courses {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px 88px;
+}
+
+.ourAcademics .courses .course {
+	width: calc(100% / 3);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 32px;
+  text-align: center;
+}
+
+.ourAcademics .courses .course a .courseTitle {
+	font-size: 25px;
+	line-height: 35px;
+	margin-bottom: 32px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	font-weight: unset;
+}
+
+.ourAcademics .courses .course .joinBtn {}
+/* ^our academics^ */
+
+/* resources */
+.resources {
+	background-color: white;
+}
+
+.resources .topSection {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 133px 75px 84px;
+}
+
+.resources .topSection .text .sectionTitle {
+	font-size: 56px;
+	line-height: 67px;
+	margin-bottom: 23px;
+	font-weight: unset;
+}
+
+.resources .topSection .text .sectionDis {
+	font-size: 25px;
+	line-height: 38px;
+}
+
+.resources .topSection .purpleReversBigBtn {
+	color: black;
+	border-color: black;
+}
+
+.resources .topSection .purpleReversBigBtn:hover {
+	color: white;
+	border-color: var(--purple);
+}
+
+.resources .postsBox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 70px;
+	padding-top: 0;
+	gap: 32px;
+}
+
+.resources .postsBox .post {
+	width: 430px;
+}
+
+.resources .postsBox .post .topPost a img {
+	width: 100%;
+  	display: block;
+}
+
+.resources .postsBox .post .middlePost {
+	padding: 30px 24px 0px;
+	border: 1px solid #cacaca;
+	border-block-color: transparent;
+}
+
+.resources .postsBox .post .middlePost .ago {
+	font-family: 'Avenir';
+	font-size: 12px;
+}
+
+.resources .postsBox .post .middlePost .postTitle {
+	font-size: 25px;
+	line-height: 35px;
+	font-weight: unset;
+	padding: 23px 0px 11px;
+}
+
+.resources .postsBox .post .middlePost .blogPost {
+	font-family: 'Avenir';
+	line-height: 24px;
+	padding-bottom: 23px;
+}
+
+.resources .postsBox .post .middlePost .postTitle,
+.resources .postsBox .post .middlePost .blogPost {
+	color: black;
+	transition: var(--transition-fast);
+}
+
+.resources .postsBox .post .middlePost .postTitle:hover,
+.resources .postsBox .post .middlePost .blogPost:hover {
+	color: var(--purple);
+}
+
+.resources .postsBox .post .footerPost {
+	padding: 0px 24px 30px;
+	border: 1px solid #cacaca;
+	border-top-color: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.resources .postsBox .post .footerPost  div:first-of-type {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}	
+
+.resources .postsBox .post .footerPost .counter,
+.resources .postsBox .post .footerPost .counter {
+	font-family: 'Avenir';
+	font-size: 12px;
+	padding: 0 5px;
+}
+
+.resources .postsBox .post .footerPost .views {
+	padding-right: 16px;
+	display: flex;
+	align-items: center;
+}
+
+.resources .postsBox .post .footerPost .comments {
+	display: flex;
+	align-items: center;
+}
+
+.resources .postsBox .post .footerPost .likes {
+	display: flex;
+	align-items: center;
+}
+
+.resources .postsBox .post .footerPost .comments,
+.resources .postsBox .post .footerPost .likes {
+	transition: var(--transition-fast);
+}
+
+.resources .postsBox .post .footerPost .comments:hover,
+.resources .postsBox .post .footerPost .likes:hover {
+	color: var(--purple);
+}
+/* ^resources^ */
+
+/* word */
+.word {
+	position: relative;
+	color: white;
+	text-align: center;
+	padding: 180px 0;
+}
+
+.word span {
+	width: 100%;
+	filter: brightness(0.3);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-image: url("https://static.wixstatic.com/media/c837a6_7635659d6dbc4f81a999fea168e5594b~mv2.jpg");
+	background-size: cover;
+	transform: scale(1.0) !important;
+}
+
+.word .sectionWord {
+	font-size: 70px;
+	line-height: 98px;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.word .auther {
+	font-size: 25px;
+	line-height: 38px;
+}
+
+.word .squar {
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+}
+/* ^word^ */

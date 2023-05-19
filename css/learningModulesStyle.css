@@ -1,0 +1,64 @@
+/* flagship courses */
+.flagshipCourses {
+	background-color: white;
+}
+
+.flagshipCourses .courses {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+	gap: 30px;
+}
+
+.flagshipCourses .courses .course {
+	width: calc(100% / 3 - 30px);
+}
+
+.flagshipCourses .courses .course .top {}
+
+.flagshipCourses .courses .course .top a img {
+	width: 100%;
+	display: block;
+}
+
+.flagshipCourses .courses .course .middle {
+	border: 1px solid #eee;
+	border-bottom-color: transparent;
+	border-top-color: transparent;
+	padding: 30px;
+	padding-right: 0;
+	padding-bottom: 0;
+}
+
+.flagshipCourses .courses .course .middle .title {
+	font-size: 24px;
+	line-height: 34px;
+	font-weight: unset;
+	color: black;
+}
+
+.flagshipCourses .courses .course .down {
+	border: 1px solid #eee;
+	border-top-color: transparent;
+	padding: 30px;
+}
+
+.flagshipCourses .courses .course .down .line {
+	width: 15%;
+	height: 1px;
+	background-color: #eee;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.flagshipCourses .courses .course .down .price {
+	font-family: 'Avenir';
+	padding-bottom: 20px;
+	display: block;
+}
+
+.flagshipCourses .courses .course .down .purpleSmallBtn:hover {
+	border-color: black;
+	color: black;
+}
+/* ^flagship courses^ */

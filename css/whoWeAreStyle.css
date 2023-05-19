@@ -1,0 +1,216 @@
+/* devon business */
+.devonBusiness {
+	display: flex;
+	justify-content: space-between;
+}
+
+.devonBusiness .leftSide {
+	background-color: #191919;
+	width: 50%;
+	color: white;
+	padding: 100px 150px;
+}
+
+.devonBusiness .leftSide .sectionTitle {
+	font-size: 56px;
+	line-height: 67px;
+	padding-bottom: 74px;
+	font-weight: unset;
+}
+
+.devonBusiness .leftSide .firstP {
+	padding-bottom: 30px;
+}
+
+.devonBusiness .leftSide .secondP {}
+
+.devonBusiness .leftSide .paragraph {
+	font-family: 'Avenir';
+	line-height: 29px;
+}
+
+.devonBusiness .rightSide {
+	width: 50%;
+	position: relative;
+}
+
+.devonBusiness .rightSide span {
+	background-image: url("https://static.wixstatic.com/media/c837a6_7635659d6dbc4f81a999fea168e5594b~mv2.jpg");
+	background-size: cover;
+	background-position: center;
+	transform: scale(1) !important;
+	width: 100%;
+	height: 100%;
+}
+/* ^devon business^ */
+
+/* our mission */
+.ourMission {
+	position: relative;
+	color: white;
+	padding: 135px;
+}
+
+.ourMission .ourMissionBg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	filter: brightness(0.2);
+	z-index: -1;
+	background-image: url("https://static.wixstatic.com/media/c837a6_f4e6a031f8634c259512f0b4bbbdfe8f~mv2.jpg");
+	transform: scale(1.0) !important;
+}
+
+.ourMission .sectionTitle {
+	font-size: 56px;
+	line-height: 67px;
+	font-weight: unset;
+	padding-bottom: 115px;
+}
+
+.ourMission .sides {
+	display: flex;
+}
+
+.ourMission .sides .left {
+	width: 50%;
+}
+
+.ourMission .sides .left .boxes {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	padding-right: 60px;
+}
+
+.ourMission .sides .left .box {
+	width: 50%;
+	padding-bottom: 50px;
+}
+
+.ourMission .sides .left .box .counter {
+	font-size: 56px;
+	line-height: 67px;
+	color: var(--purple);
+}
+
+.ourMission .sides .left .box p {
+	font-size: 22px;
+	line-height: 31px;
+}
+
+.ourMission .sides .right {
+	width: 50%;
+	padding: 0px 100px;
+}
+
+.ourMission .sides .right .firstP {
+	padding-bottom: 30px;
+}
+
+.ourMission .sides .right .secondP {}
+
+.ourMission .sides .right .paragraph {
+	font-family: 'Avenir';
+	line-height: 29px;
+}
+
+.ourMission .sides .right .paragraphTopLine {
+	background-color: #5d5d5d;
+	margin-bottom: 40px;
+}
+/* ^our mission^ */
+
+/* our core */
+.ourCore {
+	background-color: white;
+}
+
+.ourCore .sectionTitle {
+	font-size: 56px;
+	line-height: 67px;
+	padding-bottom: 20px;
+	padding-top: 130px;
+	font-weight: unset;
+	text-align: center;
+}
+
+.ourCore .sectionP {
+	font-size: 25px;
+	line-height: 38px;
+	padding-bottom: 65px;
+	text-align: center;
+}
+
+.ourCore .boxes {
+	display: flex;
+	align-items: center;
+	justify-content: space-beween;
+	border-top: 1px solid #f2f2f2;
+}
+
+.ourCore .boxes .box {
+	padding: 70px;
+}
+
+.ourCore .boxes .box:not(:last-of-type) {
+	border-right: 1px solid #f2f2f2;
+}
+
+.ourCore .boxes .box img {
+	width: 64px;
+	padding-bottom: 30px;
+}
+
+.ourCore .boxes .box .boxTitle {
+	padding-bottom: 30px;
+	font-size: 22px;
+}
+
+.ourCore .boxes .box .boxP {
+	font-family: 'Avenir';
+	line-height: 29px;
+}
+/* ^our core^ */
+
+/* companys */
+.companys {
+	background-color: white;
+	padding: 130px 0;
+}
+
+.companys .sectionTitle {
+	font-size: 56px;
+	line-height: 67px;
+	text-align: center;
+	padding-bottom: 70px;
+}
+
+.companys .companysContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: fit-content;
+}
+
+.companys .companysContainer .first {
+	margin-left: 50px;
+	padding-bottom: 30px;
+}
+
+.companys .companysContainer .first img {}
+
+.companys .companysContainer .last {
+	width: fit-content;
+}
+
+.companys .companysContainer .last img {}
+
+.companys .companysContainer img {
+	width: 120px;
+	margin: 0px 20px;
+}
+
+.companys .companysContainer .lipsImage {
+	width: 70px	;
+}
+/* ^companys^ */
