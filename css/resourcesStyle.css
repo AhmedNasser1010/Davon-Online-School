@@ -139,3 +139,125 @@
 	color: var(--purple);
 }
 /* ^resources^ */
+
+/* Responsive Page */
+
+/* Mobile and Tablet (768px and lower) */
+@media screen and (max-width: 768px) {
+	/* resources */
+	.resources .topbar .featuredPost,
+	.resources .topbar .allPosts {
+		display: none;
+	}
+
+	.resources .postsBox,
+	.resources .topbar {
+		padding: 0;
+	}
+
+	.resources .topbar {}
+
+	.resources .topbar form {
+		background-color: var(--purple);
+		padding: 10px 20px;
+		position: relative;
+	}
+
+	.resources .topbar form div {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.resources .topbar form div span {
+		font-size: 18px;
+		visibility: visible;
+		opacity: 1;
+		transition: var(--transition-fast);
+	}
+
+	.resources .topbar form.clicked div span {
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	.resources .topbar form div i {
+		z-index: 1;
+	}
+
+	.resources .topbar form input {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: transparent;
+		font-size: 17px;
+		color: black;
+		height: 100%;
+		border-bottom: 2px solid black;
+		visibility: hidden;
+		transition: var(--transition-fast);
+		opacity: 0;
+		padding-left: 20px;
+	}
+
+	.resources .topbar form.clicked input {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.resources .topbar form input::placeholder {
+		color: #232323;
+	}
+
+	.resources .topbar .select {}
+
+	.resources .topbar .select option {}
+
+	.resources .postsBox {
+		flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	}
+
+	.resources .postsBox .post {
+		width: 100%;
+	}
+
+	.resources .postsBox .post .middlePost .ago {
+		font-size: 15px;
+	}
+
+	div.select {
+		background-color: black;
+    color: white;
+    width: 100%;
+	}
+
+	div.select .bar .title {
+		font-size: 18px;
+	}
+
+	div.select .bar .arrow {
+		font-weight: unset;
+    font-size: 25px;
+	}
+
+	div.select .container span.opt.selected {
+		background-color: #131313;
+	}
+
+	div.select .container span.opt:not(:last-of-type) {
+		border-color: white;
+	}
+	/* ^resources^ */
+}
+
+/* Laptop, PC and larg monitor (770px and higher) */
+@media screen and (min-width: 770px) {
+
+	.resources .topbar .select,
+	.resources .topbar form {
+		display: none;
+	}
+}
+/* ^Responsive Page^ */

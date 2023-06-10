@@ -12,6 +12,17 @@
 	<title>Learning Modules</title>
 </head>
 <body>
+	<nav class="mobileNav">
+		<a href="#" class="purpleReversSmallBtn logBtn">Log In</a>
+		<div class="links">
+			<a href="whoWeAre.html" class="navLink">Who We Are</a>
+			<a href="learningModules.html" class="navLink">Learing Modules</a>
+			<a href="resources.html" class="navLink">Resources</a>
+			<a href="ourTeam.html" class="navLink">Our Team</a>
+			<a href="contact.html" class="navLink">Contact</a>
+		</div>
+		<a href="#" class="purpleSmallBtn enrollBtn">Enroll Now</a>
+	</nav>
 	<!-- header -->
 	<header class="header">
 		<div class="top">
@@ -24,6 +35,13 @@
 				<a href="#" class="enrollNowBtn purpleSmallBtn">Endroll Now</a>
 			</div>
 		</div>
+		<button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+  			<svg viewBox="0 0 100 100">
+    			<path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+    			<path class="line line2" d="M 20,50 H 80" />
+    			<path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+  			</svg>
+		</button>
 		<nav>
 			<a href="whoWeAre.html" class="navLink">Who We Are</a>
 			<a href="learningModules.html" class="navLink selected">Learing Modules</a>
@@ -45,6 +63,7 @@
 			<div class="course">
 				<div class="top">
 					<a href="#"><img src="https://static.wixstatic.com/media/c837a6_0d159d4f89ac4d3c988d685bc873414d~mv2.jpg" alt="course image"></a>
+					<!-- <a href="#"><img src="../images/card-1.jpg" alt="course image"></a> -->
 				</div>
 				<div class="middle">
 					<a href="#"><h2 class="title">Business Consulting - The Full Course</h2></a>
@@ -58,6 +77,7 @@
 			<div class="course">
 				<div class="top">
 					<a href="#"><img src="https://static.wixstatic.com/media/c837a6_a22fda1fe69c40808aebf2b440917270~mv2.jpg" alt="course image"></a>
+					<!-- <a href="#"><img src="../images/card-11.jpg" alt="course image"></a> -->
 				</div>
 				<div class="middle">
 					<a href="#"><h2 class="title">Business Consulting for Professionals</h2></a>
@@ -71,6 +91,7 @@
 			<div class="course">
 				<div class="top">
 					<a href="#"><img src="https://static.wixstatic.com/media/c837a6_5180cd709c714f79a5e2e65b3b1d4ac0~mv2.jpg" alt="course image"></a>
+					<!-- <a href="#"><img src="../images/card-10.jpg" alt="course image"></a> -->
 				</div>
 				<div class="middle">
 					<a href="#"><h2 class="title">Business Strategy and Consulting</h2></a>
@@ -84,6 +105,7 @@
 			<div class="course">
 				<div class="top">
 					<a href="#"><img src="https://static.wixstatic.com/media/c837a6_51d1d7a7d9a94116b29176eeeeebdb22~mv2.jpg" alt="course image"></a>
+					<!-- <a href="#"><img src="../images/card-6.jpg" alt="course image"></a> -->
 				</div>
 				<div class="middle">
 					<a href="#"><h2 class="title">Business Analysis</h2></a>
@@ -97,6 +119,7 @@
 			<div class="course">
 				<div class="top">
 					<a href="#"><img src="https://static.wixstatic.com/media/c837a6_2914a90f868446b99351a43859f5d122~mv2.jpg" alt="course image"></a>
+					<!-- <a href="#"><img src="../images/card-9.jpg" alt="course image"></a> -->
 				</div>
 				<div class="middle">
 					<a href="#"><h2 class="title">Principles of Finance</h2></a>
@@ -110,6 +133,7 @@
 			<div class="course">
 				<div class="top">
 					<a href="#"><img src="https://static.wixstatic.com/media/c837a6_1c798eb7638c4bcf9afe4b83618b4b49~mv2.jpg" alt="course image"></a>
+					<!-- <a href="#"><img src="../images/card-2.jpg" alt="course image"></a> -->
 				</div>
 				<div class="middle">
 					<a href="#"><h2 class="title">Consulting Methods</h2></a>
@@ -126,31 +150,38 @@
 	<!-- footer -->
 	<footer class="footer verticalLine">
 		<div class="leftSide">
-			<a class="icon" href="index.html">
+			<a class="icon lazyLoadTextHor lazyLoadText" href="#">
 				<h2>Davon</h2>
 				<span>Business Consulting School</span>
 			</a>
-			<h3>Join The<br>Success!</h3>
-			<a href="#" class="purpleReversBigBtn">Enroll Now</a>
+			<h3 class="lazyLoadTextHor lazyLoadText">Join The<br>Success!</h3>
+			<a href="#" class="purpleReversBigBtn lazyLoadTextHor lazyLoadText">Enroll Now</a>
 		</div>
+		<span class="line"></span>
 		<div class="rightSide">
 			<div class="info">
-				<h3>Info</h3>
-				<span class="number data">123-456-7890</span>
-				<a href="gmail:ahmedn.coder@gmail.com" target="_blank" title="Send me an email" class="emailLink data">ahmedn.coder@gmail.com</a>
+				<h3 class="lazyLoadTextHor lazyLoadText">Info</h3>
+				<div class="lazyLoadTextHor lazyLoadText">
+					<span class="number data">123-456-7890</span>
+					<a href="gmail:ahmedn.coder@gmail.com" target="_blank" title="Send me an email" class="emailLink data">ahmedn.coder@gmail.com</a>
+				</div>
 			</div>
 			<div class="address">
-				<h3>Address</h3>
-				<div class="street data">500 Terry Francine St</div>
-				<div class="country data">San Francisco, CA 94158</div>
+				<h3 class="lazyLoadTextHor lazyLoadText">Address</h3>
+				<div class="lazyLoadTextHor lazyLoadText">
+					<div class="street data">500 Terry Francine St</div>
+					<div class="country data">San Francisco, CA 94158</div>
+				</div>
 			</div>
 			<div class="follow">
-				<h3>Follow</h3>
-				<a href="#" class="data">Linkedin</a>
-				<a href="#" class="data">Facebook</a>
-				<a href="#" class="data">Instagram</a>
+				<h3 class="lazyLoadTextHor lazyLoadText">Follow</h3>
+				<div class="lazyLoadTextHor lazyLoadText">
+					<a href="#" class="data">Linkedin</a>
+					<a href="#" class="data">Facebook</a>
+					<a href="#" class="data">Instagram</a>
+				</div>
 			</div>
-			<img src="assets/icons/arrow.png" alt="arrow" class="arrow">
+			<img src="assets/icons/arrow.png" alt="arrow" class="arrow lazyLoadTextVer lazyLoadText">
 		</div>
 	</footer>
 	<!-- ^footer^ -->

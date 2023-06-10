@@ -46,3 +46,25 @@
 	border-color: black;
 }
 /* ^team^ */
+
+/* Responsive Page */
+
+/* Mobile and Tablet (768px and lower) */
+@media screen and (max-width: 768px) {
+	/* Team	*/
+	.team {
+		padding: 0;
+		flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	}
+
+	.team .member {
+		width: 100%;
+	}
+	/* ^Team^	*/
+}
+
+/* Laptop, PC and larg monitor (770px and higher) */
+@media screen and (min-width: 770px) {}
+/* ^Responsive Page^ */

@@ -35,7 +35,8 @@
 }
 
 .devonBusiness .rightSide span {
-	background-image: url("https://static.wixstatic.com/media/c837a6_7635659d6dbc4f81a999fea168e5594b~mv2.jpg");
+	background-image: url("https://static.wixstatic.com/media/c837a6_73b0c47b3d1549e4b96178367ef6c597~mv2.jpg");
+/*	background-image: url("../../images/bg-3.jpg");*/
 	background-size: cover;
 	background-position: center;
 	transform: scale(1) !important;
@@ -214,3 +215,134 @@
 	width: 70px	;
 }
 /* ^companys^ */
+
+/* Responsive Page */
+
+/* Mobile and Tablet (768px and lower) */
+@media screen and (max-width: 768px) {
+	/* Davone business */
+	.devonBusiness {
+		flex-direction: column;
+	}
+
+	.devonBusiness .leftSide {
+		padding: 50px 35px;
+	}
+
+	.devonBusiness .leftSide,
+	.devonBusiness .rightSide {
+		width: auto;
+	}
+
+	.devonBusiness .leftSide .sectionTitle {
+		font-size: 40px;
+		line-height: unset;
+		padding: 0;
+		padding-bottom: 30px;
+	}
+
+	.devonBusiness .leftSide .paragraph {
+		font-size: 20px;
+    line-height: 30px;
+	}
+
+	.devonBusiness .rightSide {
+		height: 70vh;
+	}
+	/* ^Davone business^ */
+	/* Our mission */
+	.ourMission {
+		padding: 50px 35px;
+	}
+
+	.ourMission .sectionTitle {
+		padding-bottom: 50px;
+    font-size: 40px;
+    line-height: unset;
+	}
+
+	.ourMission .sides {
+		flex-direction: column;
+	}
+
+	.ourMission .sides .right,
+	.ourMission .sides .left {
+		width: auto;
+	}
+
+	.ourMission .sides .left .boxes {
+		padding: 0;
+    flex-direction: column;
+	}
+
+	.ourMission .sides .left .box p {
+		width: max-content;
+	}
+
+	.ourMission .sides .right {
+		padding: 0;
+    font-size: 20px;
+	}
+
+	.ourMission .sides .right .paragraph {
+		line-height: 40px;
+	}
+	/* ^Our mission^ */
+	/* Our core	*/
+	.ourCore .sectionTitle {
+		font-size: 40px;
+    padding-bottom: 0px;
+	}
+
+	.ourCore .boxes {
+		flex-direction: column;
+	}
+
+	.ourCore .boxes .box {
+		border-right: unset !important;
+	}
+
+	.ourCore .boxes .box:not(:last-of-type) {
+		border-bottom: 1px solid #bbb;
+	}
+	/* ^Our core^	*/
+	/* Company */
+	.companys {
+		padding: 0;
+		padding-bottom: 35px;
+	}
+	.companys .sectionTitle {
+		font-size: 40px;
+    line-height: unset;
+    font-weight: unset;
+    padding: 35px;
+	}
+
+	.companys .companysContainer .first,
+	.companys .companysContainer .last {
+		display: none;
+	}
+
+	.companys .forMobileCompanys {
+		display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+	}
+
+	.companys .forMobileCompanys img {
+		width: calc(100% / 3 - 40px);
+    margin: 0 20px;
+	}
+	/* ^Company^ */
+}
+
+/* Laptop, PC and larg monitor (770px and higher) */
+@media screen and (min-width: 770px) {
+	/* Company */
+	.companys .forMobileCompanys {
+		display: none;
+	}
+	/* ^Company^ */
+}
+/* ^Responsive Page^ */

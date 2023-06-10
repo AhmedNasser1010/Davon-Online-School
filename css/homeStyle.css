@@ -1,14 +1,28 @@
+/* image parent */
+.introBgParent {
+	position: relative;
+	overflow: hidden;
+}
+
+.introBgParent .introdactionBg {
+	position: absolute;
+	background-image: url("https://static.wixstatic.com/media/c837a6_738c2403369b4176a2410bd54462f1df~mv2.jpg");
+/*	background-image: url("../../images/bg-1.jpg");*/
+	filter: brightness(0.3);
+	z-index: -1;
+}
+/* image parent */
+
 /* introdaction */
 .introdaction {
 	background-color: transparent;
 }
-.introdactionBg {
+/*.introdactionBg {
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: -2;
 	width: 100%;
-	filter: brightness(0.3);
 }
 
 .introdactionBg::before {
@@ -19,8 +33,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: -1;
-}
+}*/
 
 .introdaction .introText {
 	margin: 116px 116px 209px;
@@ -165,14 +178,13 @@
 	padding: 150px 140px;
 }
 
-.aboutDavon span {
+.aboutDavon span.aboutDavonBg {
 	background-image: url("https://static.wixstatic.com/media/c837a6_44e3014997b64b829ef10d8761ce79ee~mv2.jpg");
 	position: absolute;
 	top: 0;
 	left: 0;
 	filter: brightness(0.3);
 	z-index: -1;
-	transform: scale(1.0) !important;
 }
 
 .aboutDavon .top {
@@ -224,7 +236,6 @@
 	z-index: -1;
 	background-image: url("https://static.wixstatic.com/media/c837a6_0ff8e923927c4f789f092e23597f2220~mv2.jpg");
 	width: 100%;
-	transform: scale(1.0) !important;
 	background-size: cover;
 }
 
@@ -421,7 +432,7 @@
 	padding: 180px 0;
 }
 
-.word span {
+.word span.wordBg {
 	width: 100%;
 	filter: brightness(0.3);
 	position: absolute;
@@ -430,7 +441,6 @@
 	z-index: -1;
 	background-image: url("https://static.wixstatic.com/media/c837a6_7635659d6dbc4f81a999fea168e5594b~mv2.jpg");
 	background-size: cover;
-	transform: scale(1.0) !important;
 }
 
 .word .sectionWord {
@@ -452,3 +462,222 @@
 	background-color: white;
 }
 /* ^word^ */
+
+/* Responsive Page */
+
+/* Mobile and Tablet (768px and lower) */
+@media screen and (max-width: 768px) {
+	/* introduction	*/
+	.introdaction .introText {
+		margin: 50px 20px;
+	}
+
+	.introdaction .introText h2 {
+		font-size: 50px;
+    line-height: unset;
+	}
+
+	.introdaction .introText p {
+		padding-right: 80px;
+    line-height: 35px;
+    margin: 30px 0;
+	}
+
+	.introdaction .introFooter img {
+		display: none;
+	}
+
+	.introdaction .introFooter {
+		display: block;
+		padding: 50px 20px;
+	}
+
+	.introdaction .introFooter .right {
+		width: 100%;
+	}
+
+	.introdaction .introFooter .right form .inputContainer .inputEmail {
+		width: calc(100% - 36px);
+    padding: 18px;
+    font-size: 20px;
+	}
+
+	.introdaction .introFooter .right form .inputContainer .submit {
+		margin: 0;
+		width: calc(100% - 166px);
+    text-align: center;
+    font-size: 20px;
+	}
+
+	.introdaction .introFooter .right form span {
+		font-size: 18px;
+	}
+	/* ^introduction^	*/
+	/* Why enroll	*/
+	.whyEnroll {
+		flex-direction: column;
+		padding: 50px 35px;
+	}
+
+	.whyEnroll .box.one {
+		font-size: 40px;
+    line-height: unset;
+    border-color: transparent !important;
+	}
+
+	.whyEnroll .box.one .sectionTitle {
+		font-size: 40px;
+		line-height: unset;
+	}
+
+	.whyEnroll .box {
+		padding: 0;
+		width: 100%;
+		padding: 35px 0;
+	}
+
+	.whyEnroll .box:not(:last-of-type) {
+		border-bottom: 1px solid #bbb;
+	}
+
+	.whyEnroll .box.card .cardTitle {
+		font-size: 27px;
+	}
+
+	.whyEnroll .box.card .cardDis {
+		font-size: 18px;
+	}
+	/* ^Why enroll^	*/
+	/* About davon	*/
+	.aboutDavon {
+		padding: 50px 35px;
+		display: block;
+	}
+
+	.aboutDavon .top .sectionTitle {
+		font-size: 40px;
+    line-height: unset;
+	}
+
+	.aboutDavon .down {
+		padding: 0;
+		width: 100%;
+	}
+
+	.aboutDavon .down p {
+		font-size: 20px !important;
+    line-height: 35px;
+    padding: 38px 0 !important;
+	}
+
+	.aboutDavon .down .purpleReversBigBtn {
+		font-size: 20px;
+	}
+	/* ^About davon^	*/
+	/* Our academics	*/
+	.ourAcademics {
+		padding: 50px 35px;
+	}
+
+	.ourAcademics h2 {
+		padding-top: unset;
+		font-size: 40px;
+		text-align: unset;
+		margin: unset;
+		padding-bottom: 20px;
+	}
+
+	.ourAcademics p {
+		margin: unset;
+		text-align: unset;
+		width: 100%;
+		font-size: 20px;
+    line-height: 35px;
+	}
+
+	.ourAcademics .courses {
+		flex-direction: column;
+    margin: unset;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+	}
+
+	.ourAcademics .courses .course {
+		width: 100%;
+    border: 1px solid #323638;
+    text-align: unset;
+	}
+
+	.ourAcademics .courses .course:not(:last-of-type) {
+		margin-bottom: 30px;
+	}
+
+	.ourAcademics .courses .course .joinBtn {
+		width: 100%;
+    text-align: center;
+    font-size: 18px;
+	}
+
+	.ourAcademics .courses .course a .courseTitle {
+		margin-left: unset;
+		margin-right: unset;
+		width: 100%;
+	}
+	/* ^Our academics^ */
+	/* resources */
+	.resources .topSection {
+		padding: 50px 35px;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.resources .topSection .text .sectionTitle {
+		font-size: 40px;
+		margin: unset;
+	}
+
+	.resources .topSection .text .sectionDis {
+		margin-bottom: 30px;
+	}
+
+	.resources .postsBox {
+		padding: 0;
+	}
+
+	.resources .postsBox .post .middlePost .postTitle {
+		font-size: 30px;
+	}
+
+	.resources .postsBox .post .middlePost .blogPost,
+	.resources .postsBox .post .footerPost .views i,
+	.resources .postsBox .post .footerPost .comments i,
+	.resources .postsBox .post .footerPost .likes i {
+		font-size: 20px;
+	}
+
+	.resources .postsBox .post .middlePost .ago,
+	.resources .postsBox .post .footerPost .views .viewsCounter,
+	.resources .postsBox .post .footerPost .comments .commentsCounter,
+	.resources .postsBox .post .footerPost .likes .likesCounter {
+		font-size: 18px;
+	}
+	/* ^resources^ */
+	/* word	*/
+	.word {
+		padding: 50px 20px;
+	}
+
+	.word .sectionWord {
+		font-size: 40px;
+    line-height: 40px;
+    font-weight: unset;
+    padding-bottom: 30px;
+	}
+	/* ^word^	*/
+
+}
+
+/* Laptop, PC and larg monitor (770px and higher) */
+@media screen and (min-width: 770px) {}
+/* ^Responsive Page^ */

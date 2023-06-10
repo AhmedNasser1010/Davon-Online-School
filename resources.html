@@ -12,6 +12,17 @@
 	<title>Resources</title>
 </head>
 <body>
+	<nav class="mobileNav">
+		<a href="#" class="purpleReversSmallBtn logBtn">Log In</a>
+		<div class="links">
+			<a href="whoWeAre.html" class="navLink">Who We Are</a>
+			<a href="learningModules.html" class="navLink">Learing Modules</a>
+			<a href="resources.html" class="navLink">Resources</a>
+			<a href="ourTeam.html" class="navLink">Our Team</a>
+			<a href="contact.html" class="navLink">Contact</a>
+		</div>
+		<a href="#" class="purpleSmallBtn enrollBtn">Enroll Now</a>
+	</nav>
 	<!-- header -->
 	<header class="header">
 		<div class="top">
@@ -24,6 +35,13 @@
 				<a href="#" class="enrollNowBtn purpleSmallBtn">Endroll Now</a>
 			</div>
 		</div>
+		<button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+  			<svg viewBox="0 0 100 100">
+    			<path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+    			<path class="line line2" d="M 20,50 H 80" />
+    			<path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+  			</svg>
+		</button>
 		<nav>
 			<a href="whoWeAre.html" class="navLink">Who We Are</a>
 			<a href="learningModules.html" class="navLink">Learing Modules</a>
@@ -44,11 +62,29 @@
 		<div class="topbar">
 			<a href="#" class="allPosts">All Posts</a>
 			<a href="#" class="featuredPost">Featured Post</a>
+			<form action="">
+				<div>
+					<span>Resources</span>
+					<i class="fa-solid fa-magnifying-glass search"></i>
+				</div>
+				<input type="text" placeholder="Search">
+			</form>
+			<div class="select">
+				<div class="bar">
+					<span class="title"></span>
+					<span class="arrow">^</span>
+				</div>
+				<div class="container">
+					<span class="opt selected" filter-value="all_posts" opt-value="All Posts">All Posts</span>
+					<span class="opt" filter-value="featured_post" opt-value="Featured Post">Featured Post</span>
+				</div>
+			</div>
 		</div>
 		<div class="postsBox">
 			<div class="post">
 				<div class="topPost">
-					<a href="#"><img src="https://static.wixstatic.com/media/c837a6_7a7502485536429bbd0c78f8aeb10d12~mv2.jpg" alt="post image"></a>
+					<a href="#"><img src="https://static.wixstatic.com/media/c837a6_c333882396dd406fb22229c28902c3ad~mv2.jpg" alt="post image"></a>
+					<!-- <a href="#"><img src="../images/card-13.jpg" alt="post image"></a> -->
 				</div>
 				<div class="middlePost">
 					<a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
@@ -74,7 +110,8 @@
 			</div>
 			<div class="post">
 				<div class="topPost">
-					<a href="#"><img src="https://static.wixstatic.com/media/c837a6_7a7502485536429bbd0c78f8aeb10d12~mv2.jpg" alt="post image"></a>
+					<a href="#"><img src="https://static.wixstatic.com/media/c837a6_a460baedd3584815a92b76d3802531b3~mv2.jpg" alt="post image"></a>
+					<!-- <a href="#"><img src="../images/card-12.jpg" alt="post image"></a> -->
 				</div>
 				<div class="middlePost">
 					<a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
@@ -101,6 +138,7 @@
 			<div class="post">
 				<div class="topPost">
 					<a href="#"><img src="https://static.wixstatic.com/media/c837a6_292fe19b93dc451b9ee9309a3601d2b2~mv2.jpg" alt="post image"></a>
+					<!-- <a href="#"><img src="../images/card-8.jpg" alt="post image"></a> -->
 				</div>
 				<div class="middlePost">
 					<a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
@@ -127,6 +165,7 @@
 			<div class="post">
 				<div class="topPost">
 					<a href="#"><img src="https://static.wixstatic.com/media/c837a6_7a7502485536429bbd0c78f8aeb10d12~mv2.jpg" alt="post image"></a>
+					<!-- <a href="#"><img src="../images/card-3.jpg" alt="post image"></a> -->
 				</div>
 				<div class="middlePost">
 					<a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
@@ -153,6 +192,7 @@
 			<div class="post">
 				<div class="topPost">
 					<a href="#"><img src="https://static.wixstatic.com/media/c837a6_126b3a0b4377479c897068e3e69f4051~mv2.jpg" alt="post image"></a>
+					<!-- <a href="#"><img src="../images/card-7.jpg" alt="post image"></a> -->
 				</div>
 				<div class="middlePost">
 					<a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
@@ -179,6 +219,7 @@
 			<div class="post">
 				<div class="topPost">
 					<a href="#"><img src="https://static.wixstatic.com/media/c837a6_18ee45a92295453a87203ed2be035a4b~mv2.jpg" alt="post image"></a>
+					<!-- <a href="#"><img src="../images/card-4.jpg" alt="post image"></a> -->
 				</div>
 				<div class="middlePost">
 					<a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
@@ -208,31 +249,38 @@
 	<!-- footer -->
 	<footer class="footer verticalLine">
 		<div class="leftSide">
-			<a class="icon" href="index.html">
+			<a class="icon lazyLoadTextHor lazyLoadText" href="#">
 				<h2>Davon</h2>
 				<span>Business Consulting School</span>
 			</a>
-			<h3>Join The<br>Success!</h3>
-			<a href="#" class="purpleReversBigBtn">Enroll Now</a>
+			<h3 class="lazyLoadTextHor lazyLoadText">Join The<br>Success!</h3>
+			<a href="#" class="purpleReversBigBtn lazyLoadTextHor lazyLoadText">Enroll Now</a>
 		</div>
+		<span class="line"></span>
 		<div class="rightSide">
 			<div class="info">
-				<h3>Info</h3>
-				<span class="number data">123-456-7890</span>
-				<a href="gmail:ahmedn.coder@gmail.com" target="_blank" title="Send me an email" class="emailLink data">ahmedn.coder@gmail.com</a>
+				<h3 class="lazyLoadTextHor lazyLoadText">Info</h3>
+				<div class="lazyLoadTextHor lazyLoadText">
+					<span class="number data">123-456-7890</span>
+					<a href="gmail:ahmedn.coder@gmail.com" target="_blank" title="Send me an email" class="emailLink data">ahmedn.coder@gmail.com</a>
+				</div>
 			</div>
 			<div class="address">
-				<h3>Address</h3>
-				<div class="street data">500 Terry Francine St</div>
-				<div class="country data">San Francisco, CA 94158</div>
+				<h3 class="lazyLoadTextHor lazyLoadText">Address</h3>
+				<div class="lazyLoadTextHor lazyLoadText">
+					<div class="street data">500 Terry Francine St</div>
+					<div class="country data">San Francisco, CA 94158</div>
+				</div>
 			</div>
 			<div class="follow">
-				<h3>Follow</h3>
-				<a href="#" class="data">Linkedin</a>
-				<a href="#" class="data">Facebook</a>
-				<a href="#" class="data">Instagram</a>
+				<h3 class="lazyLoadTextHor lazyLoadText">Follow</h3>
+				<div class="lazyLoadTextHor lazyLoadText">
+					<a href="#" class="data">Linkedin</a>
+					<a href="#" class="data">Facebook</a>
+					<a href="#" class="data">Instagram</a>
+				</div>
 			</div>
-			<img src="assets/icons/arrow.png" alt="arrow" class="arrow">
+			<img src="assets/icons/arrow.png" alt="arrow" class="arrow lazyLoadTextVer lazyLoadText">
 		</div>
 	</footer>
 	<!-- ^footer^ -->

@@ -135,31 +135,31 @@
 	margin-bottom: 100px;
 }
 
-.contact .left .chatTheTeam {
+.contact .chatTheTeam {
 	background-color: black;
 	padding: 50px 130px;
 }
 
-.contact .left .chatTheTeam h3 {
+.contact .chatTheTeam h3 {
 	font-size: 25px;
 	line-height: 38px;
 	font-weight: unset;
 	padding-bottom: 20px;
 }
 
-.contact .left .chatTheTeam p {
+.contact .chatTheTeam p {
 	font-family: 'Avenir';
 	line-height: 29px;
 	padding-bottom: 30px;
 }
 
-.contact .left .chatTheTeam a.purpleBigBtn {
+.contact .chatTheTeam a.purpleBigBtn {
 	background-color: white;
 	color: var(--purple);
 	border-color: white;
 }
 
-.contact .left .chatTheTeam a.purpleBigBtn:hover {
+.contact .chatTheTeam a.purpleBigBtn:hover {
 	background-color: black;
 	color: white;
 }
@@ -172,8 +172,267 @@
 
 .contact .right .contactBg {
 	background-image: url("https://static.wixstatic.com/media/c837a6_0564cc8d4e9f42cd8e318c80b1617eaf~mv2.jpg");
+/*	background-image: url("../../images/bg-6.jpg");*/
 }
 /* ^contact^ */
 
 /* questions */
+.faqs {
+	background-color: white;
+	padding: 130px 300px;
+}
+
+.faqs .sectionTitle {
+	font-size: 56px;
+	line-height: 67px;
+	font-weight: unset;
+	padding-bottom: 80px;
+}
+
+.faqs .container {
+	position: relative;
+}
+
+.faqs .container form {
+	border: 3px solid;
+	border-color: rgba(3, 169, 244, 0);
+	display: flex;
+	align-items: center;
+	position: absolute;
+  top: -60px;
+  right: 0px;
+  width: 0%;
+  transition: var(--transition-fast);
+  padding: 20px;
+  overflow: hidden;
+}
+
+.faqs .container form.selected {
+	border-color: rgba(3, 169, 244, 1);
+	width: 100%;
+}
+
+
+.faqs .container form input {
+	display: none;
+	position: absolute;
+	left: 30px;
+}
+
+.faqs .container form i {
+	cursor: pointer;
+	position: absolute;
+	left: 5px;
+	transform: translateX(20px);
+}
+
+.faqs .container .settings {
+	font-family: "Avenir";
+	font-size: 12px;
+}
+
+
+.faqs .container .settings span {
+	cursor: pointer;
+	padding-right: 5px;
+	transition: var(--transition-fast);
+}
+
+.faqs .container .settings span.selected {
+	font-weight: bold;
+	color: var(--purple);
+}
+
+.faqs .container .questionsBox .q {
+	font-family: "Avenir";
+	cursor: pointer;
+	border-bottom: 1px solid #eee;
+	padding: 25px 0;
+	margin: 5px 0;
+	width: 100%;
+}
+
+.faqs .container .questionsBox .q .qTitle {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.faqs .container .questionsBox .q .qTitle h3 {
+	font-size: 18px;
+	font-weight: unset;
+	font-family: 'Questrial';
+}
+
+.faqs .container .questionsBox .q .qTitle .triggerIcon {
+	font-size: 13px;
+	font-weight: bolder;
+	transform: rotate(180deg) scaleX(1.5);
+	transition: var(--transition-fast);
+}
+
+.faqs .container .questionsBox .q .blog {
+	font-size: 16px;
+	overflow: hidden;
+	transition: var(--transition-fast);
+}
+
+.faqs .container .questionsBox .q .blog .links {
+	transition: var(--transition-fast);
+}
+
+.faqs .container .questionsBox .q .blog .links .link {
+	padding-right: 5px;
+	color: black;
+	transition: var(--transition-fast);
+}
+
+.faqs .container .questionsBox .q .blog .links .link:hover {
+	color: #595959;
+}
+
+.faqs .container .btn {
+	margin-top: 30px;
+}
+
+.faqs .container .btn:hover {
+	color: black;
+	border-color: black;
+}
 /* ^questions^ */
+/* select box */
+.selectTitle {
+	font-size: 19px;
+  color: #5f5f5f;
+  padding-bottom: 10px;
+  display: block;
+}
+
+div.select {
+	width: 100%;
+	background-color: transparent;
+	border: 1px solid black;
+}
+
+div.select .bar .title,
+div.select .container span.opt {
+	color: var(--purple);
+}
+
+div.select.clicked .bar .arrow {
+	font-size: 25px;
+  font-weight: unset;
+}
+/* ^select box^ */
+
+/* Responsive Page */
+
+/* Mobile and Tablet (768px and lower) */
+@media screen and (max-width: 768px) {
+	/* Contact */
+	.contact {
+		flex-direction: column;
+	}
+
+	.contact .left .sectionTitle {
+		font-size: 40px;
+	}
+
+	.contact .left .line {
+		width: 60%;
+		margin: 10px 0 20px;
+	}
+
+	.contact .left .sectionDis {
+		font-size: 22px;
+		margin-bottom: 30px;
+	}
+
+	.contact .left form {
+		font-size: 19px;
+	}
+
+	.contact .left form .name {
+		flex-direction: column;
+	}
+
+	.contact .left form .name .fName input {
+		margin-bottom: 30px;
+	}
+
+	.contact .left form .contact .email input {
+		margin-bottom: 30px;
+	}
+
+	.contact .left form .contact .phone input,
+	.contact .left form .name .lName input {
+		border-left-color: unset;
+	}
+
+	.contact .left .sectionTitle,
+	.contact .left .sectionDis,
+	.contact .left form {
+		padding: 0;
+	}
+
+	.contact .left,
+	.contact .right {
+		width: auto;
+	}
+
+	.contact .left {
+		padding: 50px 20px;
+	}
+
+	.contact .right {
+		height: 40vh;
+	}
+
+	.contact .left form input.purpleBigBtn {
+		margin: 0;
+	}
+
+	.contact .left .chatTheTeam {
+		display: none;
+	}
+
+	.contact .chatTheTeam.mobile {
+		padding: 50px 35px;
+	}
+
+	.contact .chatTheTeam p {
+		font-size: 18px;
+	}
+	/* ^Contact^ */
+	/* FAQs	*/
+	.faqs {
+		padding: 50px 35px;
+	}
+
+	.faqs .sectionTitle {
+		font-size: 40px;
+		line-height: unset;
+	}
+
+	.faqs .container div.settings {
+		display: none;
+	}
+	/* ^FAQs^ */
+}
+
+/* Laptop, PC and larg monitor (770px and higher) */
+@media screen and (min-width: 770px) {
+	/* Contact */
+	.contact .chatTheTeam.mobile {
+		display: none;
+	}
+	/* ^Contact^ */
+	/* FAQs */
+	.selectTitle,
+	div.select {
+		display: none;
+	}
+	/* ^FAQs^ */
+}
+
+/* ^Responsive Page^ */
