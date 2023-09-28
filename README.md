@@ -99,4 +99,4 @@ We appreciate contributions to improve our project. To contribute, follow these 
 Please adhere to the coding conventions and standards followed in the project.
 
 ## License
-This project is licensed under the [MIT License](license).
+This project is licensed under the [MIT License](LICENSE).
