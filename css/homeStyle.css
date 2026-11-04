@@ -6,7 +6,7 @@
 
 .introBgParent .introdactionBg {
 	position: absolute;
-	background-image: url("https://static.wixstatic.com/media/c837a6_738c2403369b4176a2410bd54462f1df~mv2.jpg");
+	background-image: url("../assets/images/optimized/bg-home-intro.webp");
 /*	background-image: url("../../images/bg-1.jpg");*/
 	filter: brightness(0.3);
 	z-index: -1;
@@ -179,7 +179,7 @@
 }
 
 .aboutDavon span.aboutDavonBg {
-	background-image: url("https://static.wixstatic.com/media/c837a6_44e3014997b64b829ef10d8761ce79ee~mv2.jpg");
+	background-image: url("../assets/images/optimized/bg-home-about.webp");
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -234,7 +234,7 @@
 	filter: brightness(0.2);
 	position: absolute;
 	z-index: -1;
-	background-image: url("https://static.wixstatic.com/media/c837a6_0ff8e923927c4f789f092e23597f2220~mv2.jpg");
+	background-image: url("../assets/images/optimized/bg-home-academics.webp");
 	width: 100%;
 	background-size: cover;
 }
@@ -439,7 +439,7 @@
 	top: 0;
 	left: 0;
 	z-index: -1;
-	background-image: url("https://static.wixstatic.com/media/c837a6_7635659d6dbc4f81a999fea168e5594b~mv2.jpg");
+	background-image: url("../assets/images/optimized/bg-home-word.webp");
 	background-size: cover;
 }
 

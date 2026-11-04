@@ -35,7 +35,7 @@
 }
 
 .devonBusiness .rightSide span {
-	background-image: url("https://static.wixstatic.com/media/c837a6_73b0c47b3d1549e4b96178367ef6c597~mv2.jpg");
+	background-image: url("../assets/images/optimized/bg-who-we-are-1.webp");
 /*	background-image: url("../../images/bg-3.jpg");*/
 	background-size: cover;
 	background-position: center;
@@ -58,7 +58,7 @@
 	left: 0;
 	filter: brightness(0.2);
 	z-index: -1;
-	background-image: url("https://static.wixstatic.com/media/c837a6_f4e6a031f8634c259512f0b4bbbdfe8f~mv2.jpg");
+	background-image: url("../assets/images/optimized/bg-who-we-are-2.webp");
 	transform: scale(1.0) !important;
 }
 
